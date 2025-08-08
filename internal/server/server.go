@@ -28,9 +28,9 @@ S:= &Serv{
         Addr:         ":8080",
         Handler:      router,
         ErrorLog:     logger,
-        ReadTimeout:  5 * time.Second,
-        WriteTimeout: 10 * time.Second,
-        IdleTimeout:  15 * time.Second,
+        ReadTimeout:  20 * time.Second,
+        WriteTimeout: 40 * time.Second,
+        IdleTimeout:  50 * time.Second,
     },
 }
 return S}
