@@ -18,6 +18,7 @@ func main() {
 	defer file.Close()
 	//1й аргумент: устанавливаем вывод в file, 2й аргумент: префикс-""(.....), 3й аргумент: формат вывода в файл
 	logger := log.New(file, ".....", log.Ldate|log.Ltime|log.Lshortfile)
+	
 	//  Вызываем сервер Myserver , передаем созданный логгер, получаем экземпляр сервера и настраиваем его
 	Srv := server.Myserver(logger)
     // Запуск сервера

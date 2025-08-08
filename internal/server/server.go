@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 	"time"
-	 "github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers" 
+	"github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers"
 )
 
 //Структура сервера
@@ -18,8 +18,9 @@ router := http.NewServeMux() // Маршрутизатор
 
 // Регистрируем хэндлеры для различных путей
     
-    router.HandleFunc("/", handlers.Handler1)       // вызов хэндлера по ....."/"
-    router.HandleFunc("/upload", handlers.Handler2)  // вызов хэндлера по ....."/upload"
+router.HandleFunc("/",  handlers.Handler1)    // вызов хэндлера по ....."/"      
+    
+router.HandleFunc("/upload", handlers.Handler2)  // вызов хэндлера по ....."/upload"
 
 S:= &Serv{
 	loggerServ: logger,
