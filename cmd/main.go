@@ -4,6 +4,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers"
 	"github.com/Yandex-Practicum/go1fl-sprint6-final/internal/server"
 )
 
@@ -18,7 +19,7 @@ func main() {
 	defer file.Close()
 	//1й аргумент: устанавливаем вывод в file, 2й аргумент: префикс-""(.....), 3й аргумент: формат вывода в файл
 	logger := log.New(file, ".....", log.Ldate|log.Ltime|log.Lshortfile)
-	
+	handlers.Logger = logger
 	//  Вызываем сервер Myserver , передаем созданный логгер, получаем экземпляр сервера и настраиваем его
 	Srv := server.Myserver(logger)
     // Запуск сервера
@@ -27,4 +28,5 @@ func main() {
 		// Если при запуске сервера возникают ошибки, выводим их с помощью логгера на уровне Fatal
 		logger.Fatal("Ошибка при запуске сервера: ", err)
 	}
+
 }
