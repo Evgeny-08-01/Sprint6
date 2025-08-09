@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -15,26 +14,28 @@ import (
 
  var Logger *log.Logger
 /////////////////////////////////////////////////////////////////////////////////////////////////
-//Реализация хэндлера по запросу "/"/////
+//Реализация хэндлера по запросу "/"        /////
 func Handler1(res http.ResponseWriter, req *http.Request) {
 //открыть файл 
 data, err := os.ReadFile("../index.html")
     if err != nil {
         Logger.Fatal(err)
     }
-
+// Указаываем нужный тип файла
+//    res.Header().Set("Content-Type", "multipart/form-data")
 //возвращается строка в res.Write([]byte(s))
 res.Write([]byte(data))
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Реализация хэндлера по запросу "/upload"
 func Handler2(res http.ResponseWriter, req *http.Request) {
-// Парсинг формы////
-       if err := req.ParseForm(); err != nil {
-        http.Error(res,"Ошибка при парсинге формы", http.StatusInternalServerError)
-        Logger.Fatal(err)
-        return
-    }
+// Парсинг формы//////////////////////////////////////////////////////////////////////////////////
+      // if err := req.ParseForm(); err != nil {
+      req.ParseMultipartForm(10 << 20) // 10 MB 
+//       http.Error(res,"Ошибка при парсинге формы", http.StatusInternalServerError)
+//        Logger.Fatal(err)
+//        return
+//    }
 // Получение файла из формы////////////////////////////////////////////////////////////////////////////
     file,header, err := req.FormFile("myFile") // "myFile" - название поля файла в форме
     if err != nil { 
@@ -55,7 +56,6 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
 
 // Создаем новый файл///////////////////
     now := time.Now()
-    fmt.Println(now)
     currentTime1 := now.String()[:11]
     currentTime2 := strings.ReplaceAll(now.String()[11:37], ":", "-", )
     fileExtantion := filepath.Ext(header.Filename)

@@ -14,14 +14,11 @@ type Serv struct {
 }
 
 func Myserver(logger *log.Logger) *Serv {
-router := http.NewServeMux() // Маршрутизатор
-
-// Регистрируем хэндлеры для различных путей
-    
+router := http.NewServeMux() // Маршрутизатор////////////////////////////////////////
+// Регистрируем хэндлеры для различных путей/////////////////////////////////////////
 router.HandleFunc("/",  handlers.Handler1)    // вызов хэндлера по ....."/"      
-    
 router.HandleFunc("/upload", handlers.Handler2)  // вызов хэндлера по ....."/upload"
-
+// Создаем экземпляр для настройки роутера///////////////////////////////////////////
 S:= &Serv{
 	loggerServ: logger,
 	HTTPServer: http.Server{
