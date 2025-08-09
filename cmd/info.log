@@ -1,3 +1,8 @@
 .....2025/08/09 07:02:26 handlers.go:26: open github.com/Yandex-Practicum/go1fl-sprint6-final/index.html: The system cannot find the path specified.
 .....2025/08/09 07:08:04 handlers.go:26: open ./index.html: The system cannot find the file specified.
 .....2025/08/09 07:25:06 handlers.go:46: request Content-Type isn't multipart/form-data
+.....2025/08/09 17:51:12 handlers.go:32: Размер файла: 511 байт
+.....2025/08/09 17:57:56 handlers.go:32: Размер файла: 511 байт
+.....2025/08/09 17:57:56 handlers.go:48: Было передано 511 байтов
+.....2025/08/09 17:58:00 handlers.go:32: Размер файла: 511 байт
+.....2025/08/09 17:58:00 handlers.go:48: Было передано 511 байтов
