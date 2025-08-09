@@ -14,38 +14,36 @@ import (
 
  var Logger *log.Logger
  // функция определения размера скачивания//////////////////////////////
- func getFileSize(filePath string) (int64, error) {
+/* func getFileSize(filePath string) (int64, error) {
     fileInfo, err := os.Stat(filePath)
     if err != nil {
         return 0, err
     }
     return fileInfo.Size(), nil
-}
+}*/
 /////////////////////////////////////////////////////////////////////////////////////////////////
 //Реализация хэндлера по запросу "/"        /////
 func Handler1(res http.ResponseWriter, req *http.Request) {
-   fileSize, err := getFileSize("../index.html")
-if err != nil {
+ //  fileSize, err := getFileSize("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6\\index.html")
+//if err != nil {
     // Обработка ошибки
-    log.Fatal("Ошибка при получении размера файла:", err)
-} else {
-    Logger.Println("Размер файла:", fileSize, "байт")
-} 
+//    log.Fatal("Ошибка при получении размера файла:", err)
+//} else {
+//    Logger.Println("Размер файла:", fileSize, "байт")
+//} 
 //открыть файл 
-data, err := os.ReadFile("../index.html")
-    if err != nil&&len(data)!=int(fileSize) {
+data, err := os.ReadFile("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6\\index.html")
+
+    if err != nil{//&&len(data)!=int(fileSize) {
         Logger.Fatal(err)
     }
-// Указаываем нужный тип файла
-//    res.Header().Set("Content-Type", "multipart/form-data")
-//возвращается строка в res.Write([]byte(s))
+_, err = res.Write([]byte(data))
 
-n, err := res.Write([]byte(data))
-if err != nil&&len(data)!=n {
+if err != nil{//&&len(data)!=n {
     // Обработка ошибки
     Logger.Fatal("Ошибка при записи данных:", err)
-} else {
-    Logger.Println("Было передано", n, "байтов")
+//} else {
+//    Logger.Println("Было передано", n, "байтов")
 }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////
