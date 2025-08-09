@@ -13,37 +13,18 @@ import (
 )
 
  var Logger *log.Logger
- // функция определения размера скачивания//////////////////////////////
-/* func getFileSize(filePath string) (int64, error) {
-    fileInfo, err := os.Stat(filePath)
-    if err != nil {
-        return 0, err
-    }
-    return fileInfo.Size(), nil
-}*/
 /////////////////////////////////////////////////////////////////////////////////////////////////
 //Реализация хэндлера по запросу "/"        /////
 func Handler1(res http.ResponseWriter, req *http.Request) {
- //  fileSize, err := getFileSize("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6\\index.html")
-//if err != nil {
-    // Обработка ошибки
-//    log.Fatal("Ошибка при получении размера файла:", err)
-//} else {
-//    Logger.Println("Размер файла:", fileSize, "байт")
-//} 
 //открыть файл 
 data, err := os.ReadFile("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6\\index.html")
-
-    if err != nil{//&&len(data)!=int(fileSize) {
+   if err != nil{//&&len(data)!=int(fileSize) {
         Logger.Fatal(err)
     }
 _, err = res.Write([]byte(data))
 
-if err != nil{//&&len(data)!=n {
-    // Обработка ошибки
+if err != nil{
     Logger.Fatal("Ошибка при записи данных:", err)
-//} else {
-//    Logger.Println("Было передано", n, "байтов")
 }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -77,7 +58,7 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
 // Создаем новый файл///////////////////
     now := time.Now()
     currentTime1 := now.String()[:11]
-    currentTime2 := strings.ReplaceAll(now.String()[11:37], ":", "-", )
+    currentTime2 := strings.ReplaceAll(now.String()[11:37], ":", "-" )
     fileExtantion := filepath.Ext(header.Filename)
     file2, err := os.Create(currentTime1+currentTime2+fileExtantion)       
     if err != nil {
