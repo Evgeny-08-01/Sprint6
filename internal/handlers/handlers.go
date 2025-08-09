@@ -18,9 +18,10 @@ import (
 func Handler1(res http.ResponseWriter, req *http.Request) {
 //открыть файл 
 data, err := os.ReadFile("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6\\index.html")
-   if err != nil{//&&len(data)!=int(fileSize) {
+   if err != nil{
         Logger.Fatal(err)
     }
+    res.Header().Set("Content-Type", "text/html; charset=utf-8")
 _, err = res.Write([]byte(data))
 
 if err != nil{
