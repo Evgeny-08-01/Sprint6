@@ -22,7 +22,7 @@ data, err := os.ReadFile("C:/Users/Евгений/Dev/Sprint6-final/Sprint6/inde
         Logger.Fatal("Ошибка при чтении данных:",err)
         return  }
 res.WriteHeader(http.StatusOK)
-res.Header().Set("Content-Type", "text/html; charset=utf-8")
+res.Header().Set("Content-Type", "text/html")// ; charset=utf-8") //
 _, err = res.Write([]byte(data))
 if err != nil{
     Logger.Fatal("Ошибка при записи данных:", err)
