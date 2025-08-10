@@ -12,14 +12,14 @@ import (
 	"github.com/Yandex-Practicum/go1fl-sprint6-final/internal/service"
 )
 
-// var Logger *log.Logger
+ var Logger *log.Logger
 /////////////////////////////////////////////////////////////////////////////////////////////////
 //Реализация хэндлера по запросу "/"        /////
 func Handler1(res http.ResponseWriter, req *http.Request) {
 //открыть файл 
 data, err := os.ReadFile("../index.html")
    if err != nil{
-        log.Fatal(err)
+        Logger.Fatal(err)
     }
     res.Header().Set("Content-Type", "text/html; charset=utf-8")
 _, err = res.Write([]byte(data))
@@ -41,7 +41,7 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
     file,header, err := req.FormFile("myFile") // "myFile" - название поля файла в форме
     if err != nil { 
         http.Error(res, "Не удалось получить файл", http.StatusInternalServerError)
-       log.Fatal(err)
+       Logger.Fatal(err)
         return
     }
     defer file.Close() //Закрываем файл/////
@@ -49,7 +49,7 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
     data, err := io.ReadAll(file)
     if err != nil {
         http.Error(res, "Ошибка при чтении файла", http.StatusInternalServerError)
-        log.Fatal(err)
+        Logger.Fatal(err)
         return
     }
 //  конвертация строки//////////////////
@@ -63,18 +63,18 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
     file2, err := os.Create(currentTime1+currentTime2+fileExtantion)       
     if err != nil {
         http.Error(res, "Ошибка при создании файла", http.StatusInternalServerError)
-        log.Fatal(err)
+       Logger.Fatal(err)
     }
 //Записываем результат конвертации строки в файл file2////
     _, err = file2.WriteString(convString)
     if err != nil {
          http.Error(res, "Ошибка при записи результата конвертации строки в файл", http.StatusInternalServerError)
-        log.Fatal(err)
+        Logger.Fatal(err)
     }
 defer file2.Close()
     _,err=res.Write([]byte(convString))
     if err !=   nil {
         http.Error(res, "Ошибка при передаче файла", http.StatusInternalServerError)
-        log.Fatal(err)
+       Logger.Fatal(err)
     }
 }
