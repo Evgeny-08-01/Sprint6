@@ -17,7 +17,7 @@ import (
 //Реализация хэндлера по запросу "/"        /////
 func Handler1(res http.ResponseWriter, req *http.Request) {
 	//http.ServeFile(res, req, "../index.html")//открыть файл 
-data, err := os.ReadFile("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6\\index.html")
+data, err := os.ReadFile("C:/Users/Евгений/Dev/Sprint6-final/Sprint6/index.html")
    if err != nil{
         Logger.Fatal("Ошибка при чтении данных:",err)
         return  }
