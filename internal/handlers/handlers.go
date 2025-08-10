@@ -1,7 +1,6 @@
 package handlers
 
 import (
-	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -13,21 +12,19 @@ import (
 	"github.com/Yandex-Practicum/go1fl-sprint6-final/internal/service"
 )
 
- var Logger *log.Logger
+// var Logger *log.Logger
 /////////////////////////////////////////////////////////////////////////////////////////////////
 //Реализация хэндлера по запросу "/"        /////
 func Handler1(res http.ResponseWriter, req *http.Request) {
 //открыть файл 
-data, err := os.ReadFile("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6\\index.html")
+data, err := os.ReadFile("../index.html")
    if err != nil{
-        Logger.Fatal(err)
+        log.Fatal(err)
     }
     res.Header().Set("Content-Type", "text/html; charset=utf-8")
 _, err = res.Write([]byte(data))
-fmt.Println(res.Header())
-fmt.Println(string([]byte(data)))
 if err != nil{
-    Logger.Fatal("Ошибка при записи данных:", err)
+    log.Fatal("Ошибка при записи данных:", err)
 }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,7 +41,7 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
     file,header, err := req.FormFile("myFile") // "myFile" - название поля файла в форме
     if err != nil { 
         http.Error(res, "Не удалось получить файл", http.StatusInternalServerError)
-        Logger.Fatal(err)
+       log.Fatal(err)
         return
     }
     defer file.Close() //Закрываем файл/////
@@ -52,7 +49,7 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
     data, err := io.ReadAll(file)
     if err != nil {
         http.Error(res, "Ошибка при чтении файла", http.StatusInternalServerError)
-        Logger.Fatal(err)
+        log.Fatal(err)
         return
     }
 //  конвертация строки//////////////////
@@ -66,7 +63,7 @@ func Handler2(res http.ResponseWriter, req *http.Request) {
     file2, err := os.Create(currentTime1+currentTime2+fileExtantion)       
     if err != nil {
         http.Error(res, "Ошибка при создании файла", http.StatusInternalServerError)
-        Logger.Fatal(err)
+        log.Fatal(err)
     }
 //Записываем результат конвертации строки в файл file2////
     _, err = file2.WriteString(convString)
@@ -78,6 +75,6 @@ defer file2.Close()
     _,err=res.Write([]byte(convString))
     if err !=   nil {
         http.Error(res, "Ошибка при передаче файла", http.StatusInternalServerError)
-        Logger.Fatal(err)
+        log.Fatal(err)
     }
 }
