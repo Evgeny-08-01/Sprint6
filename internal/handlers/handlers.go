@@ -17,11 +17,10 @@ import (
 //Реализация хэндлера по запросу "/"        /////
 func Handler1(res http.ResponseWriter, req *http.Request) {
 	//http.ServeFile(res, req, "../index.html")//открыть файл 
-data, err := os.ReadFile("../index.html")
+data, err := os.ReadFile("..\\index.html")//../index.html")../index.html")../index.html")//"C:\\Users\\Евгений\\Dev\\Sprint6-final\\index.html")//
    if err != nil{
         Logger.Fatal("Ошибка при чтении данных:",err)
-        return
-    }
+        return  }
 res.WriteHeader(http.StatusOK)
 res.Header().Set("Content-Type", "text/html; charset=utf-8")
 _, err = res.Write([]byte(data))

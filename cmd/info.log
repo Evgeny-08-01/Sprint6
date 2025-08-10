@@ -683,3 +683,1011 @@ net/http.(*conn).serve(0xc00008af30, {0x71eb58, 0xc00002d260})
 	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
 created by net/http.(*Server).Serve in goroutine 1
 	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:12 server.go:3638: http: panic serving [::1]:51824: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc0000c4140?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000035ac0?, 0x2?, {0xc0000c41e0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000035ac0?, 0xc21e34ab565ae748?, 0xc000035ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc000102000}, 0xc000035b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc000102000?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc000102000}, 0xc0000fa000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b320?}, {0x44e840?, 0xc000102000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc240, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:12 server.go:3638: http: panic serving [::1]:51825: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002e1a0?, 0xc000026140?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000129ac0?, 0x2?, {0xc0000261e0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000129ac0?, 0xc21e34ab59270ed4?, 0xc000129ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0000000e0}, 0xc000129b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0000000e0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0000000e0}, 0xc000078000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002c060?}, {0x44e840?, 0xc0000000e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc3f0, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:13 server.go:3638: http: panic serving [::1]:51827: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00021a0d0?, 0xc000226000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000129ac0?, 0x2?, {0xc0002260a0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000129ac0?, 0xc21e34aba0bb3b34?, 0xc000129ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0002040e0}, 0xc000129b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0002040e0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0002040e0}, 0xc0000fa140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b500?}, {0x44e840?, 0xc0002040e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00007a090, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:13 server.go:3638: http: panic serving [::1]:51828: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00012bac0?, 0x2?, {0xc0000c4280?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00012bac0?, 0xc21e34aba130f388?, 0xc00012bae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0001021c0}, 0xc00012bb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0001021c0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0001021c0}, 0xc000078140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002c210?}, {0x44e840?, 0xc0001021c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc480, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:14 server.go:3638: http: panic serving [::1]:51829: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000129ac0?, 0x2?, {0xc0000c4320?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000129ac0?, 0xc21e34aba3e9ec88?, 0xc000129ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0001022a0}, 0xc000129b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0001022a0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0001022a0}, 0xc0000fa280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b680?}, {0x44e840?, 0xc0001022a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000202090, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:14 server.go:3638: http: panic serving [::1]:51830: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000125ac0?, 0x2?, {0xc0000c43c0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000125ac0?, 0xc21e34aba3e9ec88?, 0xc000125ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc000102380}, 0xc000125b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc000102380?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc000102380}, 0xc0000fa3c0)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b6e0?}, {0x44e840?, 0xc000102380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000202120, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:14 server.go:3638: http: panic serving [::1]:51831: runtime error: invalid memory address or nil pointer dereference
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00021a0d0?, 0xc00023e000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000125ac0?, 0x2?, {0xc000226140?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000125ac0?, 0xc21e34abeb3618e0?, 0xc000125ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0002041c0}, 0xc000125b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0002041c0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0002041c0}, 0xc000246000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc0002061b0?}, {0x44e840?, 0xc0002041c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc6c0, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:19 server.go:3638: http: panic serving [::1]:51833: runtime error: invalid memory address or nil pointer dereference
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00021a0d0?, 0xc00023e000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000125ac0?, 0x2?, {0xc0002261e0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000125ac0?, 0xc21e34ad2bafafd4?, 0xc000125ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0002042a0}, 0xc000125b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0002042a0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0002042a0}, 0xc000078280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002c270?}, {0x44e840?, 0xc0002042a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000202240, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:19 server.go:3638: http: panic serving [::1]:51834: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002e1a0?, 0xc00019e000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000071ac0?, 0x2?, {0xc000026280?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000071ac0?, 0xc21e34ad2c112250?, 0xc000071ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0000001c0}, 0xc000071b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0000001c0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0000001c0}, 0xc0000fa500)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b9e0?}, {0x44e840?, 0xc0000001c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00007a120, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:19 server.go:3638: http: panic serving [::1]:51835: runtime error: invalid memory address or nil pointer dereference
+goroutine 9 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x38b380?, 0x631b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002e1a0?, 0xc00019e000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000071ac0?, 0x2?, {0xc000026320?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000071ac0?, 0xc21e34ad2c573a10?, 0xc000071ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x44e840, 0xc0000002a0}, 0xc000071b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000be0c0?, {0x44e840?, 0xc0000002a0?}, 0x2deb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0x14bc99?, {0x44e840, 0xc0000002a0}, 0xc000246140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000206480?}, {0x44e840?, 0xc0000002a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00007a240, {0x44eb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:30 server.go:3638: http: panic serving [::1]:51842: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc0000c2140?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000035ac0?, 0x2?, {0xc0000c21e0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000035ac0?, 0xc21e34afed79bc60?, 0xc000035ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc0e0}, 0xc000035b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc0e0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc0e0}, 0xc0000fa000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b320?}, {0x12ae840?, 0xc0000fc0e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc240, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:30 server.go:3638: http: panic serving [::1]:51843: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000193ac0?, 0x2?, {0xc0000c2280?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000193ac0?, 0xc21e34afefa2ed2c?, 0xc000193ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc2a0}, 0xc000193b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc2a0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc2a0}, 0xc000078000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002c060?}, {0x12ae840?, 0xc0000fc2a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000188000, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:30 server.go:3638: http: panic serving [::1]:51844: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0002200d0?, 0xc000238000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000193ac0?, 0x2?, {0xc0002380a0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000193ac0?, 0xc21e34aff0fccc88?, 0xc000193ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00020e0e0}, 0xc000193b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc00020e0e0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00020e0e0}, 0xc000208000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000202030?}, {0x12ae840?, 0xc00020e0e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc480, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:31 server.go:3638: http: panic serving [::1]:51845: runtime error: invalid memory address or nil pointer dereference
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000193ac0?, 0x2?, {0xc0000c2320?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000193ac0?, 0xc21e34b0327551fc?, 0xc000193ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc380}, 0xc000193b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc380?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc380}, 0xc000208140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc0002021b0?}, {0x12ae840?, 0xc0000fc380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00020c090, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:31 server.go:3638: http: panic serving [::1]:51846: runtime error: invalid memory address or nil pointer dereference
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00022bac0?, 0x2?, {0xc0000c23c0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00022bac0?, 0xc21e34b032dbaac4?, 0xc00022bae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc460}, 0xc00022bb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc460?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc460}, 0xc0000fa140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b650?}, {0x12ae840?, 0xc0000fc460?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00020c120, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:31 server.go:3638: http: panic serving [::1]:51847: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00022bac0?, 0x2?, {0xc0000c2460?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00022bac0?, 0xc21e34b0331a6818?, 0xc00022bae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc540}, 0xc00022bb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc540?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc540}, 0xc0000fa280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008b890?}, {0x12ae840?, 0xc0000fc540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc630, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:35 server.go:3638: http: panic serving [::1]:51849: runtime error: invalid memory address or nil pointer dereference
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00018fac0?, 0x2?, {0xc0000c2500?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00018fac0?, 0x4?, 0xc00018fae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc620}, 0xc00018fb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc620?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc620}, 0xc000208280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000202270?}, {0x12ae840?, 0xc0000fc620?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc750, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:35 server.go:3638: http: panic serving [::1]:51850: runtime error: invalid memory address or nil pointer dereference
+goroutine 30 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002e1a0?, 0xc000026140?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00018fac0?, 0x2?, {0xc0000261e0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00018fac0?, 0xc21e34b102d7673c?, 0xc00018fae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000000e0}, 0xc00018fb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000000e0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000000e0}, 0xc0002083c0)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc0002022d0?}, {0x12ae840?, 0xc0000000e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dc870, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:40 server.go:3638: http: panic serving [::1]:51854: runtime error: invalid memory address or nil pointer dereference
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000193ac0?, 0x2?, {0xc0000c25a0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000193ac0?, 0xc21e34b246e2bd54?, 0xc000193ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc700}, 0xc000193b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc700?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc700}, 0xc0000783c0)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002c2a0?}, {0x12ae840?, 0xc0000fc700?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00020c2d0, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:40 server.go:3638: http: panic serving [::1]:51855: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00022dac0?, 0x2?, {0xc0000c2640?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00022dac0?, 0xc21e34b24746eef0?, 0xc00022dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc7e0}, 0xc00022db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc7e0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc7e0}, 0xc000208500)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000202450?}, {0x12ae840?, 0xc0000fc7e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00007a090, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:41:40 server.go:3638: http: panic serving [::1]:51856: runtime error: invalid memory address or nil pointer dereference
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00022dac0?, 0x2?, {0xc0000c26e0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00022dac0?, 0xc21e34b24793f100?, 0xc00022dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc8c0}, 0xc00022db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc8c0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc8c0}, 0xc000208640)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc0002024b0?}, {0x12ae840?, 0xc0000fc8c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dca20, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:42:10 server.go:3638: http: panic serving [::1]:51861: runtime error: invalid memory address or nil pointer dereference
+goroutine 67 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002e1a0?, 0xc00029c000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00022dac0?, 0x2?, {0xc000026280?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00022dac0?, 0xc21e34b9c85c0c58?, 0xc00022dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000001c0}, 0xc00022db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000001c0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000001c0}, 0xc000078500)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002c360?}, {0x12ae840?, 0xc0000001c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000dcb40, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:42:10 server.go:3638: http: panic serving [::1]:51862: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002e1a0?, 0xc00029c000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00018fac0?, 0x2?, {0xc000026320?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00018fac0?, 0xc21e34b9c8c45790?, 0xc00018fae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000002a0}, 0xc00018fb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000002a0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000002a0}, 0xc0000fa3c0)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008be30?}, {0x12ae840?, 0xc0000002a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00007a120, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:42:10 server.go:3638: http: panic serving [::1]:51863: runtime error: invalid memory address or nil pointer dereference
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc000099110?, 0xc000122000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00018fac0?, 0x2?, {0xc0000c2780?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00018fac0?, 0xc21e34b9c8fbcc70?, 0xc00018fae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0000fc9a0}, 0xc00018fb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000bc0c0?, {0x12ae840?, 0xc0000fc9a0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0000fc9a0}, 0xc000208780)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000202510?}, {0x12ae840?, 0xc0000fc9a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00007a2d0, {0x12aeb78, 0xc00008b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:44:37 server.go:3638: http: panic serving [::1]:51929: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000a7110?, 0xc0000ca140?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000035ac0?, 0x2?, {0xc0000ca1e0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000035ac0?, 0xc21e34dea123c104?, 0xc000035ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00010c000}, 0xc000035b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc00010c000?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00010c000}, 0xc000072140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002c150?}, {0x12ae840?, 0xc00010c000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000e4360, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:44:37 server.go:3638: http: panic serving [::1]:51930: runtime error: invalid memory address or nil pointer dereference
+goroutine 4 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000a7110?, 0xc000128000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00005dac0?, 0x2?, {0xc0000ca280?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00005dac0?, 0xc21e34dea3e6d584?, 0xc00005dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00010c0e0}, 0xc00005db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc00010c0e0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00010c0e0}, 0xc00018e000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x12ae840?, 0xc00010c0e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000076090, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:44:37 server.go:3638: http: panic serving [::1]:51931: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0001a60d0?, 0xc0001b8000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00005dac0?, 0x2?, {0xc0001b80a0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00005dac0?, 0xc21e34dea4acc30c?, 0xc00005dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0001a8000}, 0xc00005db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc0001a8000?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0001a8000}, 0xc000102140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00009b6b0?}, {0x12ae840?, 0xc0001a8000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000e4510, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:44:38 server.go:3638: http: panic serving [::1]:51932: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000a7110?, 0xc000128000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00005dac0?, 0x2?, {0xc0000ca320?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00005dac0?, 0xc21e34dee6b2fb80?, 0xc00005dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00010c1c0}, 0xc00005db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc00010c1c0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00010c1c0}, 0xc000102280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00009b710?}, {0x12ae840?, 0xc00010c1c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000190090, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:44:38 server.go:3638: http: panic serving [::1]:51933: runtime error: invalid memory address or nil pointer dereference
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000a7110?, 0xc000128000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00012bac0?, 0x2?, {0xc0000ca3c0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00012bac0?, 0xc21e34dee715b040?, 0xc00012bae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00010c2a0}, 0xc00012bb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc00010c2a0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00010c2a0}, 0xc0001023c0)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00009b770?}, {0x12ae840?, 0xc00010c2a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000190120, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:44:38 server.go:3638: http: panic serving [::1]:51934: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0001a60d0?, 0xc0001ce000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00012dac0?, 0x2?, {0xc0001b8140?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00012dac0?, 0xc21e34dee75a57a4?, 0xc00012dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc0001a80e0}, 0xc00012db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc0001a80e0?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc0001a80e0}, 0xc000102500)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00009b980?}, {0x12ae840?, 0xc0001a80e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0001901b0, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:45:42 server.go:3638: http: panic serving [::1]:51953: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000a7110?, 0xc000128000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00012dac0?, 0x2?, {0xc0000ca460?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00012dac0?, 0xc21e34eed6cc9e9c?, 0xc00012dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00010c380}, 0xc00012db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc00010c380?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00010c380}, 0xc00018e140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc0001823c0?}, {0x12ae840?, 0xc00010c380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0001902d0, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:45:42 server.go:3638: http: panic serving [::1]:51954: runtime error: invalid memory address or nil pointer dereference
+goroutine 40 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000a7110?, 0xc000128000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc0001ddac0?, 0x2?, {0xc0000ca500?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc0001ddac0?, 0xc21e34eed731d848?, 0xc0001ddae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00010c460}, 0xc0001ddb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc00010c460?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00010c460}, 0xc000102640)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00009b9e0?}, {0x12ae840?, 0xc00010c460?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000190360, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:45:42 server.go:3638: http: panic serving [::1]:51955: runtime error: invalid memory address or nil pointer dereference
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0x11eb380?, 0x1491b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000a7110?, 0xc000128000?, 0x93?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc0001ddac0?, 0x2?, {0xc0000ca5a0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc0001ddac0?, 0xc21e34eed782d4b4?, 0xc0001ddae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0x12ae840, 0xc00010c540}, 0xc0001ddb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc0000c40c0?, {0x12ae840?, 0xc00010c540?}, 0x113eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xfabc99?, {0x12ae840, 0xc00010c540}, 0xc00018e280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000182480?}, {0x12ae840?, 0xc00010c540?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000e47e0, {0x12aeb78, 0xc00009b230})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:29 server.go:3638: http: panic serving [::1]:52012: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002f1e0?, 0xc000026280?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc000035ac0?, 0x2?, {0xc0000103f0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc000035ac0?, 0xc21e351881961314?, 0xc000035ae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc0000000e0}, 0xc000035b38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc0000000e0?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc0000000e0}, 0xc00013e000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002d350?}, {0xfde820?, 0xc0000000e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000122240, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:29 server.go:3638: http: panic serving [::1]:52013: runtime error: invalid memory address or nil pointer dereference
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002f1e0?, 0xc000166000?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00009bac0?, 0x2?, {0xc0000105b0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00009bac0?, 0xc21e35188431e3a0?, 0xc00009bae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc0000001c0}, 0xc00009bb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc0000001c0?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc0000001c0}, 0xc0000aa000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008e090?}, {0xfde820?, 0xc0000001c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000092000, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:29 server.go:3638: http: panic serving [::1]:52014: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002f1e0?, 0xc000166000?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00009dac0?, 0x2?, {0xc000010700?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00009dac0?, 0xc21e351884fb6c34?, 0xc00009dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc0000002a0}, 0xc00009db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc0000002a0?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc0000002a0}, 0xc00013e140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002d5c0?}, {0xfde820?, 0xc0000002a0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000092090, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:30 server.go:3638: http: panic serving [::1]:52015: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000be0d0?, 0xc0000bc0e0?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00009dac0?, 0x2?, {0xc0000bc150?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00009dac0?, 0xc21e3518c74c6434?, 0xc00009dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc0000c0000}, 0xc00009db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc0000c0000?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc0000c0000}, 0xc0000aa140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008e180?}, {0xfde820?, 0xc0000c0000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000122510, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:30 server.go:3638: http: panic serving [::1]:52016: runtime error: invalid memory address or nil pointer dereference
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc00002f1e0?, 0xc000166000?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00005fac0?, 0x2?, {0xc000010850?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00005fac0?, 0xc21e3518c7ac60dc?, 0xc00005fae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc000000380}, 0xc00005fb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc000000380?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc000000380}, 0xc0000aa280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008e1e0?}, {0xfde820?, 0xc000000380?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0001225a0, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:30 server.go:3638: http: panic serving [::1]:52017: runtime error: invalid memory address or nil pointer dereference
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0002220d0?, 0xc0002200e0?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00006dac0?, 0x2?, {0xc000220150?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00006dac0?, 0xc21e3518c7e88684?, 0xc00006dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc000224000}, 0xc00006db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc000224000?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc000224000}, 0xc000208000)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc000204030?}, {0xfde820?, 0xc000224000?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0001226c0, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:35 server.go:3638: http: panic serving [::1]:52020: runtime error: invalid memory address or nil pointer dereference
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000be0d0?, 0xc0000d8000?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00009bac0?, 0x2?, {0xc0000bc2a0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00009bac0?, 0xc21e351a08baeb74?, 0xc00009bae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc0000c00e0}, 0xc00009bb38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc0000c00e0?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc0000c00e0}, 0xc0000aa3c0)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00008e330?}, {0xfde820?, 0xc0000c00e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc00020c090, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:35 server.go:3638: http: panic serving [::1]:52021: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0000be0d0?, 0xc0000d8000?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00009dac0?, 0x2?, {0xc0000bc3f0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00009dac0?, 0xc21e351a091e8e18?, 0xc00009dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc0000c01c0}, 0xc00009db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc0000c01c0?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc0000c01c0}, 0xc000208140)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc0002041b0?}, {0xfde820?, 0xc0000c01c0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc0000921b0, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
+.....2025/08/10 11:48:35 server.go:3638: http: panic serving [::1]:52022: runtime error: invalid memory address or nil pointer dereference
+goroutine 24 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1947 +0xbe
+panic({0xf1b380?, 0x11c1b60?})
+	C:/Program Files/Go/src/runtime/panic.go:792 +0x132
+log.(*Logger).output(0xc0002220d0?, 0xc00023e000?, 0x69?, 0x0?)
+	C:/Program Files/Go/src/log/log.go:203 +0x34
+log.(*Logger).Output(0xc00009dac0?, 0x2?, {0xc0002202a0?, 0x0?})
+	C:/Program Files/Go/src/log/log.go:195 +0x3c
+log.(*Logger).Fatal(0x0, {0xc00009dac0?, 0xc21e351a0962d370?, 0xc00009dae0?})
+	C:/Program Files/Go/src/log/log.go:283 +0x3b
+github.com/Yandex-Practicum/go1fl-sprint6-final/internal/handlers.Handler1({0xfde820, 0xc0002240e0}, 0xc00009db38?)
+	C:/Users/Евгений/Dev/Sprint6-final/Sprint6/internal/handlers/handlers.go:22 +0x85
+net/http.HandlerFunc.ServeHTTP(0xc00010e0c0?, {0xfde820?, 0xc0002240e0?}, 0xe6eb56?)
+	C:/Program Files/Go/src/net/http/server.go:2294 +0x29
+net/http.(*ServeMux).ServeHTTP(0xcdbc99?, {0xfde820, 0xc0002240e0}, 0xc00013e280)
+	C:/Program Files/Go/src/net/http/server.go:2822 +0x1c4
+net/http.serverHandler.ServeHTTP({0xc00002d920?}, {0xfde820?, 0xc0002240e0?}, 0x6?)
+	C:/Program Files/Go/src/net/http/server.go:3301 +0x8e
+net/http.(*conn).serve(0xc000092360, {0xfdeb58, 0xc00002d260})
+	C:/Program Files/Go/src/net/http/server.go:2102 +0x625
+created by net/http.(*Server).Serve in goroutine 1
+	C:/Program Files/Go/src/net/http/server.go:3454 +0x485
