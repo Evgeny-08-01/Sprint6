@@ -19,12 +19,13 @@ func Handler1(res http.ResponseWriter, req *http.Request) {
 //открыть файл 
 data, err := os.ReadFile("../index.html")
    if err != nil{
-        Logger.Fatal(err)
+        Logger.Fatal("Ошибка при чтении данных:",err)
     }
-    res.Header().Set("Content-Type", "text/html; charset=utf-8")
+res.WriteHeader(http.StatusOK)
+res.Header().Set("Content-Type", "text/html; charset=utf-8")
 _, err = res.Write([]byte(data))
 if err != nil{
-    log.Fatal("Ошибка при записи данных:", err)
+    Logger.Fatal("Ошибка при записи данных:", err)
 }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////
