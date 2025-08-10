@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -23,7 +24,8 @@ data, err := os.ReadFile("C:\\Users\\Евгений\\Dev\\Sprint6-final\\Sprint6
     }
     res.Header().Set("Content-Type", "text/html; charset=utf-8")
 _, err = res.Write([]byte(data))
-
+fmt.Println(res.Header())
+fmt.Println(string([]byte(data)))
 if err != nil{
     Logger.Fatal("Ошибка при записи данных:", err)
 }
